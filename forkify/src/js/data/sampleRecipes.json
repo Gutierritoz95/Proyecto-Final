@@ -1,0 +1,396 @@
+{
+  "recipes": [
+    {
+      "id": "23456",
+      "title": "Pasta with Tomato Cream Sauce",
+      "publisher": "The Pioneer Woman",
+      "source_url": "https://example.com/pasta-tomato-cream",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 4,
+      "cooking_time": 25,
+      "ingredients": [
+        { "quantity": 400, "unit": "g", "description": "pasta" },
+        { "quantity": 2, "unit": "tbsp", "description": "olive oil" },
+        { "quantity": 1, "unit": "", "description": "onion, diced" },
+        { "quantity": 400, "unit": "g", "description": "canned tomatoes" },
+        { "quantity": 0.5, "unit": "cup", "description": "heavy cream" }
+      ]
+    },
+    {
+      "id": "sample-001",
+      "title": "Quick Tomato Pasta",
+      "publisher": "Demo Kitchen",
+      "source_url": "https://example.com/quick-tomato-pasta",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 2,
+      "cooking_time": 20,
+      "ingredients": [
+        { "quantity": 200, "unit": "g", "description": "pasta" },
+        { "quantity": 2, "unit": "tbsp", "description": "olive oil" },
+        { "quantity": 1, "unit": "", "description": "garlic clove, minced" },
+        { "quantity": 400, "unit": "g", "description": "canned tomatoes" },
+        { "quantity": null, "unit": "", "description": "salt & pepper to taste" }
+      ]
+    },
+    {
+      "id": "sample-002",
+      "title": "Margherita Pizza",
+      "publisher": "Demo Pizzeria",
+      "source_url": "https://example.com/margherita-pizza",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 4,
+      "cooking_time": 25,
+      "ingredients": [
+        { "quantity": 300, "unit": "g", "description": "pizza dough" },
+        { "quantity": 200, "unit": "g", "description": "tomato sauce" },
+        { "quantity": 200, "unit": "g", "description": "mozzarella cheese" },
+        { "quantity": null, "unit": "", "description": "fresh basil leaves" }
+      ]
+    },
+    {
+      "id": "sample-003",
+      "title": "Veggie Pizza Deluxe",
+      "publisher": "Veggie Chef",
+      "source_url": "https://example.com/veggie-pizza",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 4,
+      "cooking_time": 30,
+      "ingredients": [
+        { "quantity": 300, "unit": "g", "description": "pizza dough" },
+        { "quantity": 150, "unit": "g", "description": "bell peppers, sliced" },
+        { "quantity": 100, "unit": "g", "description": "mushrooms, sliced" },
+        { "quantity": 150, "unit": "g", "description": "cheese" }
+      ]
+    },
+    {
+      "id": "sample-004",
+      "title": "Chicken Alfredo Pasta",
+      "publisher": "Pasta House",
+      "source_url": "https://example.com/chicken-alfredo",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 3,
+      "cooking_time": 35,
+      "ingredients": [
+        { "quantity": 300, "unit": "g", "description": "pasta" },
+        { "quantity": 200, "unit": "g", "description": "chicken breast, diced" },
+        { "quantity": 200, "unit": "ml", "description": "heavy cream" },
+        { "quantity": 50, "unit": "g", "description": "parmesan cheese" }
+      ]
+    },
+    {
+      "id": "sample-005",
+      "title": "Classic Caesar Salad",
+      "publisher": "Healthy Kitchen",
+      "source_url": "https://example.com/caesar-salad",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 2,
+      "cooking_time": 15,
+      "ingredients": [
+        { "quantity": 1, "unit": "", "description": "romaine lettuce head" },
+        { "quantity": 0.25, "unit": "cup", "description": "parmesan cheese, grated" },
+        { "quantity": 2, "unit": "tbsp", "description": "caesar dressing" },
+        { "quantity": 0.5, "unit": "cup", "description": "croutons" }
+      ]
+    },
+    {
+      "id": "sample-006",
+      "title": "Beef Stir Fry",
+      "publisher": "Asian Cuisine",
+      "source_url": "https://example.com/beef-stir-fry",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 4,
+      "cooking_time": 20,
+      "ingredients": [
+        { "quantity": 300, "unit": "g", "description": "beef strips" },
+        { "quantity": 2, "unit": "tbsp", "description": "soy sauce" },
+        { "quantity": 1, "unit": "tbsp", "description": "vegetable oil" },
+        { "quantity": 200, "unit": "g", "description": "mixed vegetables" }
+      ]
+    },
+    {
+      "id": "sample-007",
+      "title": "Chocolate Chip Cookies",
+      "publisher": "Sweet Treats",
+      "source_url": "https://example.com/chocolate-cookies",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 12,
+      "cooking_time": 25,
+      "ingredients": [
+        { "quantity": 2, "unit": "cups", "description": "all-purpose flour" },
+        { "quantity": 1, "unit": "cup", "description": "butter, softened" },
+        { "quantity": 0.75, "unit": "cup", "description": "brown sugar" },
+        { "quantity": 1, "unit": "cup", "description": "chocolate chips" }
+      ]
+    },
+    {
+      "id": "sample-008",
+      "title": "Grilled Salmon",
+      "publisher": "Seafood Master",
+      "source_url": "https://example.com/grilled-salmon",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 2,
+      "cooking_time": 18,
+      "ingredients": [
+        { "quantity": 400, "unit": "g", "description": "salmon fillets" },
+        { "quantity": 2, "unit": "tbsp", "description": "olive oil" },
+        { "quantity": 1, "unit": "tbsp", "description": "lemon juice" },
+        { "quantity": null, "unit": "", "description": "herbs and spices to taste" }
+      ]
+    },
+    {
+      "id": "sample-009",
+      "title": "Vegetable Soup",
+      "publisher": "Comfort Food Co",
+      "source_url": "https://example.com/vegetable-soup",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 6,
+      "cooking_time": 40,
+      "ingredients": [
+        { "quantity": 2, "unit": "cups", "description": "mixed vegetables, chopped" },
+        { "quantity": 4, "unit": "cups", "description": "vegetable broth" },
+        { "quantity": 1, "unit": "tbsp", "description": "olive oil" },
+        { "quantity": null, "unit": "", "description": "salt and pepper to taste" }
+      ]
+    },
+    {
+      "id": "sample-010",
+      "title": "Breakfast Pancakes",
+      "publisher": "Morning Glory",
+      "source_url": "https://example.com/breakfast-pancakes",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 4,
+      "cooking_time": 15,
+      "ingredients": [
+        { "quantity": 1.5, "unit": "cups", "description": "all-purpose flour" },
+        { "quantity": 1, "unit": "cup", "description": "milk" },
+        { "quantity": 1, "unit": "", "description": "egg" },
+        { "quantity": 2, "unit": "tbsp", "description": "sugar" }
+      ]
+    },
+    {
+      "id": "sample-011",
+      "title": "Mushroom Risotto",
+      "publisher": "Italian Delights",
+      "source_url": "https://example.com/mushroom-risotto",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 4,
+      "cooking_time": 35,
+      "ingredients": [
+        { "quantity": 1.5, "unit": "cups", "description": "arborio rice" },
+        { "quantity": 200, "unit": "g", "description": "mixed mushrooms" },
+        { "quantity": 4, "unit": "cups", "description": "warm vegetable broth" },
+        { "quantity": 0.5, "unit": "cup", "description": "white wine" }
+      ]
+    },
+    {
+      "id": "sample-012",
+      "title": "Fish Tacos",
+      "publisher": "Mexican Flavors",
+      "source_url": "https://example.com/fish-tacos",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 3,
+      "cooking_time": 20,
+      "ingredients": [
+        { "quantity": 300, "unit": "g", "description": "white fish fillets" },
+        { "quantity": 6, "unit": "", "description": "small tortillas" },
+        { "quantity": 1, "unit": "cup", "description": "cabbage, shredded" },
+        { "quantity": 0.25, "unit": "cup", "description": "lime crema" }
+      ]
+    },
+    {
+      "id": "sample-013",
+      "title": "Thai Green Curry",
+      "publisher": "Asian Kitchen",
+      "source_url": "https://example.com/thai-green-curry",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 4,
+      "cooking_time": 25,
+      "ingredients": [
+        { "quantity": 2, "unit": "tbsp", "description": "green curry paste" },
+        { "quantity": 400, "unit": "ml", "description": "coconut milk" },
+        { "quantity": 300, "unit": "g", "description": "chicken breast, sliced" },
+        { "quantity": 200, "unit": "g", "description": "vegetables" }
+      ]
+    },
+    {
+      "id": "sample-014",
+      "title": "Greek Salad",
+      "publisher": "Mediterranean Co",
+      "source_url": "https://example.com/greek-salad",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 2,
+      "cooking_time": 10,
+      "ingredients": [
+        { "quantity": 2, "unit": "", "description": "tomatoes, chopped" },
+        { "quantity": 1, "unit": "", "description": "cucumber, sliced" },
+        { "quantity": 100, "unit": "g", "description": "feta cheese" },
+        { "quantity": 0.25, "unit": "cup", "description": "olives" }
+      ]
+    },
+    {
+      "id": "sample-015",
+      "title": "Beef Burger",
+      "publisher": "Grill Masters",
+      "source_url": "https://example.com/beef-burger",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 2,
+      "cooking_time": 15,
+      "ingredients": [
+        { "quantity": 300, "unit": "g", "description": "ground beef" },
+        { "quantity": 2, "unit": "", "description": "burger buns" },
+        { "quantity": 2, "unit": "slices", "description": "cheese" },
+        { "quantity": 1, "unit": "", "description": "lettuce and tomato" }
+      ]
+    },
+    {
+      "id": "sample-016",
+      "title": "Lemon Cheesecake",
+      "publisher": "Dessert Heaven",
+      "source_url": "https://example.com/lemon-cheesecake",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 8,
+      "cooking_time": 60,
+      "ingredients": [
+        { "quantity": 500, "unit": "g", "description": "cream cheese" },
+        { "quantity": 0.75, "unit": "cup", "description": "sugar" },
+        { "quantity": 3, "unit": "", "description": "eggs" },
+        { "quantity": 0.25, "unit": "cup", "description": "lemon juice" }
+      ]
+    },
+    {
+      "id": "sample-017",
+      "title": "Chicken Quesadilla",
+      "publisher": "Tex-Mex Kitchen",
+      "source_url": "https://example.com/chicken-quesadilla",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 2,
+      "cooking_time": 12,
+      "ingredients": [
+        { "quantity": 200, "unit": "g", "description": "cooked chicken, shredded" },
+        { "quantity": 2, "unit": "", "description": "large tortillas" },
+        { "quantity": 1, "unit": "cup", "description": "cheese, grated" },
+        { "quantity": 0.5, "unit": "", "description": "bell pepper, diced" }
+      ]
+    },
+    {
+      "id": "sample-018",
+      "title": "Pasta Puttanesca",
+      "publisher": "Italian Classics",
+      "source_url": "https://example.com/pasta-puttanesca",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 4,
+      "cooking_time": 20,
+      "ingredients": [
+        { "quantity": 400, "unit": "g", "description": "spaghetti" },
+        { "quantity": 2, "unit": "tbsp", "description": "olive oil" },
+        { "quantity": 0.25, "unit": "cup", "description": "olives" },
+        { "quantity": 2, "unit": "tbsp", "description": "capers" }
+      ]
+    },
+    {
+      "id": "sample-019",
+      "title": "Banana Bread",
+      "publisher": "Home Baking",
+      "source_url": "https://example.com/banana-bread",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 8,
+      "cooking_time": 55,
+      "ingredients": [
+        { "quantity": 3, "unit": "", "description": "ripe bananas" },
+        { "quantity": 1.75, "unit": "cups", "description": "all-purpose flour" },
+        { "quantity": 0.75, "unit": "cup", "description": "sugar" },
+        { "quantity": 0.33, "unit": "cup", "description": "melted butter" }
+      ]
+    },
+    {
+      "id": "sample-020",
+      "title": "Moroccan Tagine",
+      "publisher": "North African Cuisine",
+      "source_url": "https://example.com/moroccan-tagine",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 6,
+      "cooking_time": 90,
+      "ingredients": [
+        { "quantity": 500, "unit": "g", "description": "lamb, cubed" },
+        { "quantity": 2, "unit": "cups", "description": "mixed vegetables" },
+        { "quantity": 1, "unit": "tbsp", "description": "moroccan spices" },
+        { "quantity": 0.5, "unit": "cup", "description": "dried fruits" }
+      ]
+    },
+    {
+      "id": "sample-021",
+      "title": "Chicken Tikka Masala",
+      "publisher": "Indian Spices",
+      "source_url": "https://example.com/chicken-tikka-masala",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 4,
+      "cooking_time": 40,
+      "ingredients": [
+        { "quantity": 400, "unit": "g", "description": "chicken breast, cubed" },
+        { "quantity": 200, "unit": "ml", "description": "tomato sauce" },
+        { "quantity": 200, "unit": "ml", "description": "heavy cream" },
+        { "quantity": 2, "unit": "tbsp", "description": "indian spices" }
+      ]
+    },
+    {
+      "id": "sample-022",
+      "title": "French Onion Soup",
+      "publisher": "Classic French",
+      "source_url": "https://example.com/french-onion-soup",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 4,
+      "cooking_time": 45,
+      "ingredients": [
+        { "quantity": 4, "unit": "", "description": "large onions, sliced" },
+        { "quantity": 4, "unit": "cups", "description": "beef broth" },
+        { "quantity": 0.5, "unit": "cup", "description": "gruyere cheese" },
+        { "quantity": 4, "unit": "slices", "description": "bread" }
+      ]
+    },
+    {
+      "id": "sample-023",
+      "title": "Chocolate Lava Cake",
+      "publisher": "Decadent Desserts",
+      "source_url": "https://example.com/chocolate-lava-cake",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 2,
+      "cooking_time": 12,
+      "ingredients": [
+        { "quantity": 100, "unit": "g", "description": "dark chocolate" },
+        { "quantity": 50, "unit": "g", "description": "butter" },
+        { "quantity": 1, "unit": "", "description": "egg" },
+        { "quantity": 2, "unit": "tbsp", "description": "sugar" }
+      ]
+    },
+    {
+      "id": "sample-024",
+      "title": "BBQ Pulled Pork",
+      "publisher": "Southern Kitchen",
+      "source_url": "https://example.com/bbq-pulled-pork",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 6,
+      "cooking_time": 180,
+      "ingredients": [
+        { "quantity": 1, "unit": "kg", "description": "pork shoulder" },
+        { "quantity": 0.5, "unit": "cup", "description": "bbq sauce" },
+        { "quantity": 2, "unit": "tbsp", "description": "dry rub spices" },
+        { "quantity": 6, "unit": "", "description": "burger buns" }
+      ]
+    },
+    {
+      "id": "sample-025",
+      "title": "Caprese Salad",
+      "publisher": "Italian Fresh",
+      "source_url": "https://example.com/caprese-salad",
+      "image_url": "./forkify/src/img/logo.png",
+      "servings": 2,
+      "cooking_time": 5,
+      "ingredients": [
+        { "quantity": 2, "unit": "", "description": "large tomatoes" },
+        { "quantity": 200, "unit": "g", "description": "fresh mozzarella" },
+        { "quantity": 0.25, "unit": "cup", "description": "fresh basil leaves" },
+        { "quantity": 2, "unit": "tbsp", "description": "balsamic glaze" }
+      ]
+    }
+  ]
+}

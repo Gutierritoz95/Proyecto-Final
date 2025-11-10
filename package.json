@@ -1,0 +1,16 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass forkify/src/sass/main.scss index_files/main.css --no-source-map --style=expanded",
+    "sass:watch": "sass forkify/src/sass/main.scss index_files/main.css --watch"
+  },
+  "author": "Daniel Alejandro Gutierrez Loza",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.93.3"
+  }
+}
