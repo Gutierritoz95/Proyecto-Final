@@ -14,18 +14,52 @@ export const state = {
 
 export const loadRecipe = async function (id) {
   try {
-    const data = await getJSON(`${API_URL}/${id}`);
-    
-    const { recipe } = data.data;
+    const data = await getJSON(`${API_URL}/get?rId=${id}`);
+
+    const { recipe } = data;
     state.recipe = {
-      id: recipe.id,
+      id: recipe.recipe_id,
       title: recipe.title,
       publisher: recipe.publisher,
       sourceUrl: recipe.source_url,
       image: recipe.image_url,
-      servings: recipe.servings,
-      cookingTime: recipe.cooking_time,
-      ingredients: recipe.ingredients,
+      servings: recipe.servings || 4, // Default servings if not provided
+      cookingTime: recipe.cooking_time || 30, // Default cooking time if not provided
+      ingredients: recipe.ingredients.map((ing, index) => {
+        // Convert string ingredients to object format
+        // Parse the ingredient string to extract quantity, unit, and description
+        const parts = ing.trim().split(' ');
+        let quantity = null;
+        let unit = '';
+        let description = ing;
+
+        // Try to extract quantity from first part
+        if (parts.length > 0) {
+          const firstPart = parts[0];
+          // Check if it's a number or fraction
+          if (/^[\d\/.]+$/.test(firstPart)) {
+            quantity = parseFloat(firstPart) || null;
+            if (parts.length > 1) {
+              // Check if second part is a unit
+              const secondPart = parts[1];
+              if (['cup', 'cups', 'tbsp', 'tsp', 'oz', 'ounce', 'ounces', 'lb', 'pound', 'pounds', 'g', 'kg', 'ml', 'l'].includes(secondPart.toLowerCase().replace(/[,()]/g, ''))) {
+                unit = secondPart.replace(/[,()]/g, '');
+                description = parts.slice(2).join(' ');
+              } else {
+                description = parts.slice(1).join(' ');
+              }
+            } else {
+              description = '';
+            }
+          }
+        }
+
+        return {
+          quantity,
+          unit: unit || '',
+          description: description || ing
+        };
+      }),
     };
   } catch (err) {
     console.log(`${err} 💥💥💥💥`);
@@ -64,7 +98,7 @@ export const loadRecipe = async function (id) {
 const checkAPIAvailability = async function () {
   try {
     // Intentamos hacer una consulta simple a la API
-    await getJSON(`${API_URL}/?search=pizza`);
+    await getJSON(`${API_URL}/search?q=pizza`);
     return true; // API disponible
   } catch (err) {
     return false; // API no disponible
@@ -84,9 +118,9 @@ export const loadAllRecipes = async function() {
       
       for (const searchTerm of searches) {
         try {
-          const data = await getJSON(`${API_URL}/?search=${searchTerm}`);
-          if (data.data.recipes && data.data.recipes.length > 0) {
-            allResults = allResults.concat(data.data.recipes.slice(0, 5)); // 5 recetas por categoría
+          const data = await getJSON(`${API_URL}/search?q=${searchTerm}`);
+          if (data.recipes && data.recipes.length > 0) {
+            allResults = allResults.concat(data.recipes.slice(0, 5)); // 5 recetas por categoría
           }
         } catch (err) {
           console.log(`Error loading ${searchTerm} recipes:`, err);
@@ -95,7 +129,7 @@ export const loadAllRecipes = async function() {
       
       if (allResults.length > 0) {
         state.search.results = allResults.map(rec => ({
-          id: rec.id,
+          id: rec.recipe_id,
           title: rec.title,
           publisher: rec.publisher,
           image: rec.image_url,
@@ -138,13 +172,13 @@ export const loadAllRecipes = async function() {
 export async function loadSearchResults(query) {
   try {
     state.isUsingLocalData = false; // Reset state
-    const data = await getJSON(`${API_URL}/?search=${query}`);
+    const data = await getJSON(`${API_URL}/search?q=${query}`);
 
     state.search.query = query;
 
-    state.search.results = data.data.recipes.map(rec => {
+    state.search.results = data.recipes.map(rec => {
       return {
-        id: rec.id,
+        id: rec.recipe_id,
         title: rec.title,
         publisher: rec.publisher,
         image: rec.image_url,
